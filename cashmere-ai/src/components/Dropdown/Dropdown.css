@@ -24,3 +24,7 @@
         border-radius: 5px;
     }
 }
+
+.lead-card-container:nth-child(3n) .menu-content {
+    right: 10px;
+}
