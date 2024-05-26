@@ -1,0 +1,18 @@
+.pagination {
+    .clickable {
+        font-size: 12px;
+        font-weight: 500;
+        margin-right: 4px;
+        cursor: pointer;
+
+        &.disabled {
+            pointer-events: none;
+        }
+    }
+
+    .page-numbers {
+        font-size: 12px;
+        font-weight: 400;
+        margin-right: 2px;
+    }
+}

@@ -1,0 +1,84 @@
+.loader-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    .placeholder-container {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #E2E2E2;
+        border-radius: 16px;
+    }
+
+    .placeholder-header {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px 0 20px;
+
+        .header-right {
+            display: flex;
+            gap: 8px;
+        }
+    }
+
+    .placeholder-body {
+        margin: 20px;
+
+        .lead-properties {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .placeholder-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #F8F8F8;
+        border-radius: 0 0 16px 16px;
+    }
+
+    .placeholder-label {
+        .field-label {
+            font-weight: 400;
+            font-size: 12px;
+            color: #6F6F6F;
+        }
+    
+        .field-value {
+            height: 8px;
+            width: 100%;
+            margin-bottom: 12px;
+            border-radius: 20px;
+        }
+
+        .shimmerBG {
+            animation-duration: 2.2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-name: shimmer;
+            animation-timing-function: linear;
+            background: #ddd;
+            background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+            background-size: 1200px 100%;
+        }
+    }
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1200px 0;
+    }
+    100% {
+        background-position: 1200px 0;
+    }
+}

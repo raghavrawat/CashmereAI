@@ -1,0 +1,26 @@
+.menu-content {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 12px;
+    border: 1px solid #F1F1F1;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 4px;
+        font-size: 10px;
+        font-weight: 400;
+        gap:20px;
+
+    }
+
+    .menu-item:hover {
+        background-color: #EFEFEF;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
